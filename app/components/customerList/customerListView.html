@@ -1,0 +1,17 @@
+﻿<div class="row" ng-controller="customerViewController">
+    <div class="form-group">
+        <button class="btn btn-default pull-right" 
+                ng-click="openAddNewCustomerPopup()"
+                style="margin-bottom: 6px;"><i class="fa fa-plus" aria-hidden="true"></i> Add New Customer</button>
+    </div>
+
+    <div class="col-sm-12 customer-grid-section">
+        <div ui-grid="customerGridOptions"
+             ui-grid-pagination class="grid"
+             id="customerGrid"
+             ng-if="customerGridOptions.data.length>0"></div>
+        <div ng-if="customerGridOptions.data.length==0" style="color: #00a29a;">No Records Available</div>
+    </div>
+
+    <div class="alert alert-info" role="alert" ng-bind="allertMessage" ng-if="showalert"></div>
+</div>

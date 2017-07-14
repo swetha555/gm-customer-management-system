@@ -1,0 +1,47 @@
+﻿<div class="panel panel-default panel-new-customer">
+    <div class="panel-heading">
+        <h4> Add New Customer</h4>
+    </div>
+    <div class="panel-body">
+        <form ng-submit="customerAdd.$valid && addNewCustomer(customer)" name="customerAdd" class="css-form">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label class="sr-only">First Name</label>
+                    <input type="text" name="txtFirstName" class="form-control check-valid" placeholder="First Name*" ng-model="customer.firstName" required>
+                    <span ng-if="customerAdd.txtFirstName.$touched && customerAdd.txtFirstName.$invalid">This is a required field</span>
+                </div>
+
+                <div class="col-sm-6 form-group">
+                    <label class="sr-only" for="exampleInputPassword3">Last Name</label>
+                    <input type="text" name="txtLastName" class="form-control check-valid" placeholder="Last Name*" ng-model="customer.lastName" required>
+                    <span ng-if="customerAdd.txtLastName.$touched && customerAdd.txtLastName.$invalid">This is a required field</span>
+                </div>
+            </div>      
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label class="sr-only">Email</label>
+                    <input type="email" name="email" class="form-control check-valid" placeholder="Email*" ng-model="customer.email" required>
+                  <span ng-show="customerAdd.email.$touched  && customerAdd.email.$invalid">This is a required field</span>
+                </div>
+
+                <div class="col-sm-6 form-group">
+                    <label class="sr-only">Phone Number</label>
+                    <input type="number" id="phone" ng-maxlength="10" class="form-control check-valid" placeholder="Phone Number" ng-model="customer.phoneNumber">
+                
+                </div>
+            </div>     
+            <div class="row">
+
+                <div class="col-sm-12 form-group">
+                    <label class="sr-only" for="exampleInputPassword3">Address</label>
+                    <textarea class="form-control" placeholder="Address" ng-model="customer.address"></textarea>
+                </div>
+
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-default" ng-disabled="customerAdd.$invalid">Save</button>
+                    <button type="button" class="btn btn-default"  ng-click="cancel()">Close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
