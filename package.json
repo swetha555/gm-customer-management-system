@@ -1,0 +1,32 @@
+{
+  "name": "m-customer-management-system",
+  "version": "1.0.0",
+  "description": "This project is a Single page Angular web application!! It gives the list of customers and managing the data with delete, edit options.",
+  "main": "server.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swetha555/gm-customer-management-system.git"
+  },
+  "author": "Swetha Vengala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swetha555/gm-customer-management-system/issues"
+  },
+  "homepage": "https://github.com/swetha555/gm-customer-management-system#readme",
+  "devDependencies": {
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "angular-ui-bootstrap": "^0.13.4",
+    "angular-ui-grid": "^4.0.6",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    // "jasmine-core": "^2.6.4",
+    "jquery": "^3.2.1"
+    // "karma": "^1.7.0",
+    // "karma-chrome-launcher": "^2.2.0",
+    // "karma-jasmine": "^1.1.0"
+  }
+}
