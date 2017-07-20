@@ -23,10 +23,13 @@
     "angular-ui-grid": "^4.0.6",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
-    // "jasmine-core": "^2.6.4",
-    "jquery": "^3.2.1"
-    // "karma": "^1.7.0",
-    // "karma-chrome-launcher": "^2.2.0",
-    // "karma-jasmine": "^1.1.0"
+    "jasmine-core": "^2.6.4",
+    "jquery": "^3.2.1",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
   }
 }

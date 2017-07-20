@@ -1,26 +1,15 @@
-#This project is a Single page Angular web application!!
-This gives the list of customers and managing the data with delete, edit options.
-
-#It has dependencies with:
-1.Angular 1.6.4
-2.Angular UI-grid
-3.JQuery
-4.Font-awesome
-5.Bootstrap
-6.Node or Python Local server
-
-** #1-5 dependencies have already been addressed by suing static dowloaded files, but they can be updated using Bower or replacing them with newer versions later on.
+This project is a Single page Angular web application!!
+This gives the list of customers and managing the data with delete, edit options. You can add a customer by clicking on the add button. 
 
 In order to run the app,
 
 1. Go to terminal--> cd to the project diectory similar to "cd /Users/swetha/Downloads/gm-customer-management-system.Web"
 
 2.  if you have node or python already installed, just run:
-a) npm install --save http-server and then type http-server to start the app at desired port, generally it is 8080.
+a) npm install - to download and install all the dev dependencies. 
+b) npm start - to start the app in the posrt 8085.
 
-b) "python -m SimpleHTTPServer 8080" for python local server for mac and for windows python -m SimpleHTTPServer 8080 or python -m http.server 8080
+3. Now go to your desired browser and type http://localserver:8085
 
-3. Now go to your desired browser and type http://localserver:8080
-
-Voila!! you will see the app up and running.
+You will see the app up and running.
 
